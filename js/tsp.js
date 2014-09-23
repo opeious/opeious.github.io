@@ -136,14 +136,10 @@ var drawPath = function(path)
      line.fromSprite(cities.getAt(path[i]),cities.getAt(path[i+1]));
      game.debug.geom(line);    
     }
-    
-<<<<<<< HEAD
+
     line.fromSprite(cities.getAt(0),cities.getAt(path[i]));
     game.debug.geom(line);   
-=======
-    line.fromSprite(cities.getAt(path[i]),cities.getAt(0));
-    game.debug.geom(line);
->>>>>>> origin/master
+
 }
 
 
