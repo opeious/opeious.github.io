@@ -96,7 +96,7 @@ var rePop = function()
       population[z]=tempPath; 
       
         
-     /*   
+     
       var testString = '0 ';
       for(var i=0;i<=slider1Val-2;i++)
       {
@@ -105,7 +105,7 @@ var rePop = function()
       }
       var test=fitness(tempPath);
       console.log(testString,'0 : ',fitness(tempPath));  
-     */
+     
     
     }
     
