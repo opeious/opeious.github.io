@@ -41,8 +41,8 @@ function update()
     if(boids.countLiving()<slider1Val)
     {
         addBoid(game.world.randomX,game.world.randomY);
-            boids.setAll('scale.x',0.5);
-            boids.setAll('scale.y',0.5);
+            boids.setAll('scale.x',0.4);
+            boids.setAll('scale.y',0.4);
             boids.setAll('target',targoot);
     
     }
