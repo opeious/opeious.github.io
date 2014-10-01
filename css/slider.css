@@ -71,22 +71,3 @@
 }
 
 
-
-body {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  display: flex;
-  flex-direction: column;
-  flex-orient: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 50px;
-  box-sizing: border-box;
-  background: hsl(0,0%,90%);
-}
-html {
- height: 100%; 
-}
