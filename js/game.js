@@ -5,8 +5,7 @@ var i;
 var targoot;
 
 function preload() {
-
-    game.load.image('boid', 'img/mysp1.png');
+   game.load.image('boid', 'https://raw.githubusercontent.com/opeious/opeious.github.io/master/img/mySp1.png');
 }
 
 function create() {
