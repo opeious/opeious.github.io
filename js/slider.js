@@ -19,6 +19,8 @@ $('#slider-input').change( function() {
     }
     
     slider1Val = val;
+    
+    updateValues();
 });
 
 
@@ -39,4 +41,25 @@ $('#slider-input2').change( function() {
     }
     
     slider2Val = val;
+    
+    updateValues();
 });
+
+
+function updateValues()
+{
+     while(boids.countLiving()<slider1Val)
+    {
+        addBoid(game.world.randomX,game.world.randomY);
+            boids.setAll('scale.x',mySpScale);
+            boids.setAll('scale.y',mySpScale);
+            boids.setAll('target',targoot);
+    
+    }
+    while(boids.countLiving()>slider1Val){
+        var a = boids.getFirstAlive();
+        if(a)
+         a.kill();
+        
+    }
+};

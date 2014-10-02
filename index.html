@@ -19,23 +19,25 @@
     <div class="slider" id="slider1">Herd Size:
     <input id="slider-input" class="slider-input" type="range" min="0" value="10" max="50"></div>
     <div class="slider" id="slider2">Target&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
-    <input id="slider-input2" class="slider-input" type="range" min="0" value="1" max="1"></div>
+    <input id="slider-input2" class="slider-input" type="range" min="0" value="0" max="1"></div>
     <div id="log">
-        <b>Current Version</b>
-    v2  (1-Oct-2014)<br><br>
+        <b>Controls and Parametrization<br></b>
+        Animals are generated, the get hungry and die if they do not eat. They also prefer moving in flocks.
+        
+        The First slider controls the herd size and the second slider controls targetting.
+        (Full -> Mouse Pointer. Zero -> Automatic (At this moment this moves target to center, in future it will basically imply free will.) )
+     <br><br><b>Future Plans<br></b>
+     Decision Trees, Energy, Species, Predators, Map, Pathfinding, Traits, Reproduction, etc.
+        <br><br>
+         <b>Current Version</b>
+    v3  (2-Oct-2014)<br><br>
         
         <b>Changelog<br></b>
     v1 Simple Chasing (the mouse pointer)<br>
-    v2 Flocking (herd like behaviour)<br><br>
+    v2 Flocking (herd like behaviour) <br>
+    v3 Hunger, eating mechanics, food Sources (Apple Trees - random apple drops) <br>
     
 
-        <b>Controls and Parametrization<br></b>
-        At this moment not a lot can be parameterized or controled. The First slider controls the herd size and the second slider controls targetting.
-        (Full -> Mouse Pointer. Zero -> Automatic (At this moment this moves target to center in future it will basically imply free will.) )
-     <br><br><b>Future Plans<br></b>
-    Energy, Hunger, Food Sources, Species, Predators, Map, Pathfinding, Traits, etc.
-        
-        
     <br><br>
         <b>Source</b>&nbsp;<a href="https://github.com/opeious/opeious.github.io" target="_blank">GitHub</a><br>
         <sub>This is a personal project that I work on when I get free time (mostly weekends or college holidays). If there is something that you would like to see in this simulator leave me a message at tapanranjan@gmail.com .  Also to check out my various other projects visit <a href="http://www.tapanranjan.com" target="_blank">www.tapanranjan.com</a></sub>
@@ -49,6 +51,10 @@
     <script src='js/jquery.js'></script>
     <script src="js/slider.js"></script>
     <script src="js/phaser.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/boids.js"></script>
+    <script src="js/trees.js"></script>
+    <script src="js/foods.js"></script>
     <script src="js/game.js"></script>
     
     
