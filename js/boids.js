@@ -22,7 +22,9 @@ var Boid = function(game, x, y, group, options) {
   this.group = boids;
   this.game.physics.enable(this, Phaser.Physics.ARCADE);
 
-  
+  this.currentState = 1;                                     // 0 idle, 1 herd, 2 look for food  
+    
+    
   this.hunger=ran.between(10,100);    
     
   this.maxVelocity = 50.0;
@@ -35,8 +37,6 @@ var Boid = function(game, x, y, group, options) {
   this.maxDistance = this.radius * 10.0;
   
   this.target = new Phaser.Sprite;
-  this.target.x = targoot.x;
-  this.target.y = targoot.y;
   this.target.alive = true;
 };
 
@@ -51,7 +51,26 @@ Boid.prototype.update = function() {
       console.log("Boid died due to hunger.");
   }
     
+  this.currentState=1; 
+  this.target = targoot;    
     
+  if(this.hunger<50)
+  {
+   this.currentState=2;
+   var closestFood = new Phaser.Sprite;
+   var dist = 10000;
+   
+   foods.forEach(function(food) {
+    var distBetween = this.game.physics.arcade.distanceBetween(this, food);
+    if(distBetween < dist)
+    {dist = distBetween;
+       this.target = food;}
+       
+   },this);  
+  }
+    
+  
+
   this.body.acceleration.setTo(0,0);
   if(this.target && this.target.exists) {
     var seekAccel = Phaser.Point();
@@ -69,6 +88,7 @@ Boid.prototype.update = function() {
   
   this.checkBorders();
   this.rotation = Math.atan2(this.body.velocity.y, this.body.velocity.x);
+
     
     
 };

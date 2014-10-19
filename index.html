@@ -10,7 +10,7 @@
   
     <link rel="stylesheet" type="text/css" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -22,7 +22,7 @@
     <input id="slider-input2" class="slider-input" type="range" min="0" value="1" max="1"></div>
     <div id="log">
         <b>Controls and Parametrization<br></b>
-        Animals are generated, the get hungry and die if they do not eat. They also prefer moving in flocks.
+        Animals are generated, they go towards the mouse pointer. They also prefer moving in flocks, but will leave their herds if they get really hungry.
         
         The First slider controls the herd size and the second slider controls targetting.
         (Full -> Mouse Pointer. Zero -> Automatic (At this moment this moves target to center, in future it will basically imply free will.) )
@@ -30,17 +30,21 @@
      Decision Trees, Energy, Species, Predators, Map, Pathfinding, Traits, Reproduction, etc.
         <br><br>
          <b>Current Version</b>
-    v3  (2-Oct-2014)<br><br>
+    v4  (15-Oct-2014)<br><br>
         
         <b>Changelog<br></b>
+        v4 Leaving herd for food if really hungry <br>
+        v3 Hunger, eating mechanics, food Sources (Apple Trees - random apple drops) <br>
+        v2 Flocking (herd like behaviour) <br>
     v1 Simple Chasing (the mouse pointer)<br>
-    v2 Flocking (herd like behaviour) <br>
-    v3 Hunger, eating mechanics, food Sources (Apple Trees - random apple drops), Simulator Timer <br>
+    
+    
+    
     
 
     <br><br>
         <b>Source</b>&nbsp;<a href="https://github.com/opeious/opeious.github.io" target="_blank">GitHub</a><br>
-        <sub>This is a personal project that I work on when I get free time (mostly weekends or college holidays). If there is something that you would like to see in this simulator leave me a message at tapanranjan@gmail.com .  Also to check out my various other projects visit <a href="http://www.tapanranjan.com" target="_blank">www.tapanranjan.com</a></sub>
+        <sub>This is a personal project that I work on when I get free time (mostly weekends or college holidays). If there is something that you would like to see in this simulator or want to help me with this simulator, leave me a message at tapanranjan@gmail.com .  Also to check out my various other projects visit <a href="http://www.tapanranjan.com" target="_blank">www.tapanranjan.com</a></sub>
     </div>
     <div id="phaser"></div>
     
@@ -57,17 +61,6 @@
     <script src="js/foods.js"></script>
     <script src="js/game.js"></script>
     
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-55397807-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-  
     
 </body>
 
