@@ -25,7 +25,7 @@ var Boid = function(game, x, y, group, options) {
   this.currentState = 1;                                     // 0 idle, 1 herd, 2 look for food  
     
     
-  this.hunger=ran.between(10,100);    
+  this.hunger=ran.between(8,20);    
     
   this.maxVelocity = 50.0;
   this.maxForce = 10.0;
@@ -54,7 +54,7 @@ Boid.prototype.update = function() {
   this.currentState=1; 
   this.target = targoot;    
     
-  if(this.hunger<50)
+  if(this.hunger<10)
   {
    this.currentState=2;
    var closestFood = new Phaser.Sprite;
