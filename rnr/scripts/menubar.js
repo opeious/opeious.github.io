@@ -44,39 +44,41 @@ function check(){
     var currentTop = $window.scrollTop();
     if(currentTop > $("#fifth").offset().top -1)
         {
-        $("#menu5").html("#REGISTER");
-        $("#menu4").html("JUDGING");
-        $("#menu2").html("PATHS");
+        $("#menu5").html("EVENTS.");
+        $("#menu4").html("RATES");
+        $("#menu2").html("GAMES");
         $("#menu1").html("ABOUT");
         }
         else if(currentTop > $("#fourth").offset().top -1)
         {
-        $("#menu5").html("REGISTER");
-        $("#menu4").html("#JUDGING");
-        $("#menu2").html("PATHS");
+        $("#menu5").html("EVENTS");
+        $("#menu4").html("RATES.");
+        $("#menu2").html("GAMES");
         $("#menu1").html("ABOUT");
         }
         else if(currentTop > $("#third").offset().top -1)
         {
-        $("#menu5").html("REGISTER");
-        $("#menu4").html("JUDGING");
-        $("#menu2").html("#PATHS");
+        $("#menu5").html("EVENTS");
+        $("#menu4").html("RATES");
+        $("#menu2").html("GAMES.");
         $("#menu1").html("ABOUT");
         }
         else if(currentTop > $body.height()- (($body.height()*4)/5 )-1)
         {
-        $("#menu5").html("REGISTER");
-        $("#menu4").html("JUDGING");
-        $("#menu2").html("PATHS");
-        $("#menu1").html("#ABOUT");
+        $("#menu5").html("EVENTS");
+        $("#menu4").html("RATES");
+        $("#menu2").html("GAMES");
+        $("#menu1").html("ABOUT.");
         }
         else{
-        $("#menu5").html("REGISTER");
-        $("#menu4").html("JUDGING");
-        $("#menu2").html("PATHS");
+        $("#menu5").html("EVENTS");
+        $("#menu4").html("RATES");
+        $("#menu2").html("GAMES");
         $("#menu1").html("ABOUT");
         }
 };
+
+
 $("#arrow").click(function(){
     $.scrollTo($('#menu'), 1000);
     check();
