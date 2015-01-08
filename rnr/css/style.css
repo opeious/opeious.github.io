@@ -108,6 +108,7 @@ body p,body h6,body h5{
     padding-top: 10%;
 }
 #creationcard h5,#creationcard h6{
+    transform: 
     color: white;
     line-height: .9em;
 }
@@ -193,8 +194,11 @@ body p,body h6,body h5{
 transform:rotate(360deg) scale(1.2);
 }
 
-#menu3:hover{
+#menu3{
     transition: all 1s ease-in-out;
+}
+
+#menu3:hover{
     transform: scale(1.1);
 }
 
@@ -209,7 +213,7 @@ transform:rotate(360deg) scale(1.2);
 #scroll h5{
     font-family: montserrat;
     margin-top: 5em;
-    color: rgba(32, 190, 239, 0.87) !important;
+    color: rgba(32, 190, 239, 0.2) !important;
 }
 #menu{
     height: 2%;
@@ -238,10 +242,12 @@ transform:rotate(360deg) scale(1.2);
     font-family: montserrat-reg;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+       transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 #menu li:hover{
-    color: #ea2e49;
+    transform: scale(1.2);
+    color: #e3e3e3;
 }
 
 #menu li:nth-of-type(1),#menu li:nth-of-type(2),#menu li:nth-of-type(4),#menu li:nth-of-type(5){
