@@ -94,6 +94,12 @@ $("#menu2").click(function(){
     $.scrollTo($('#third'), 1000);
     check();
 });
+
+$("#menu3").click(function(){
+    $.scrollTo($('#topofpage'), 1000);
+    check();
+});
+
 $("#menu4").click(function(){
     $.scrollTo($('#fourth'), 1000);
     check();
