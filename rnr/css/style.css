@@ -168,7 +168,8 @@ body p,body h6,body h5{
     border-radius: 50%;
     border: .2em solid rgb(3, 180, 245);
 }
-#arrow{
+
+.arrow{
     position: absolute;
     right:0;
     left:0;
@@ -183,16 +184,19 @@ body p,body h6,body h5{
     background: rgb(3, 180, 245);
     cursor: pointer;
     -webkit-transition: all 1s;
-    transition: all 1s;    
+    transition: all 1s;
+    z-index: 10;
 }
 
-#arrow:hover{
+.arrow:hover{
 -webkit-transform:rotate(360deg);
 -moz-transform:rotate(360deg);
 -o-transform:rotate(360deg);
 -ms-transform:rotate(360deg);
 transform:rotate(360deg) scale(1.2);
 }
+
+
 
 #menu3{
     transition: all 1s ease-in-out;
@@ -202,7 +206,7 @@ transform:rotate(360deg) scale(1.2);
     transform: scale(1.1);
 }
 
-#arrow img{
+.arrow img{
     position: absolute;
     left:0;
     right:0;

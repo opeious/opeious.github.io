@@ -79,7 +79,7 @@ function check(){
 };
 
 
-$("#arrow").click(function(){
+$(".arrow").click(function(){
     $.scrollTo($('#menu'), 1000);
     check();
 });
