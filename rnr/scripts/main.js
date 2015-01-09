@@ -1,9 +1,5 @@
-var currImg = 0;
-var maxImg = 6;
-
-var init = function() {
-    
-    
+function preloader() {
+  
     
     <!--//--><![CDATA[//><!--
 
@@ -27,8 +23,31 @@ var init = function() {
 				img6.src = "../img/mainbg6.jpg";
 				img7.src = "../img/mainbg7.jpg";
 			}
-
+    init();
 		//--><!]]>
+}
+
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+
+addLoadEvent(preloader);
+
+
+
+var init = function() {
+    
+  
     document.getElementById("blankBG").style.opacity = 0;
     document.getElementById("blankBG").style.display = "none";
     
