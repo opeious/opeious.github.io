@@ -1,7 +1,9 @@
 var currImg = 0;
 var maxImg = 6;
 
-var init = function() {   
+var init = function() {
+    
+    document.getElementById("blankBG").style.opacity = 0;
     
   var i =0;
   var images = ['../img/mainbg1.jpg','../img/mainbg2.jpg','../img/mainbg3.jpg','../img/mainbg4.jpg','../img/mainbg5.jpg','../img/mainbg6.jpg','../img/mainbg7.jpg','../img/mainbg.jpg'];
