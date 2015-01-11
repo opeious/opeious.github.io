@@ -44,7 +44,7 @@ function check(){
     var currentTop = $window.scrollTop();
     if(currentTop > $("#fifth").offset().top -1)
         {
-        $("#menu5").html("EVENTS.");
+        $("#menu5").html("<u>EVENTS</u>");
         $("#menu4").html("RATES");
         $("#menu2").html("GAMES");
         $("#menu1").html("ABOUT");
@@ -52,7 +52,7 @@ function check(){
         else if(currentTop > $("#fourth").offset().top -1)
         {
         $("#menu5").html("EVENTS");
-        $("#menu4").html("RATES.");
+        $("#menu4").html("<u>RATES</u>");
         $("#menu2").html("GAMES");
         $("#menu1").html("ABOUT");
         }
@@ -60,7 +60,7 @@ function check(){
         {
         $("#menu5").html("EVENTS");
         $("#menu4").html("RATES");
-        $("#menu2").html("GAMES.");
+        $("#menu2").html("<u>GAMES</u>");
         $("#menu1").html("ABOUT");
         }
         else if(currentTop > $body.height()- (($body.height()*4)/5 )-1)
@@ -68,7 +68,7 @@ function check(){
         $("#menu5").html("EVENTS");
         $("#menu4").html("RATES");
         $("#menu2").html("GAMES");
-        $("#menu1").html("ABOUT.");
+        $("#menu1").html("<u>ABOUT</u>");
         }
         else{
         $("#menu5").html("EVENTS");
