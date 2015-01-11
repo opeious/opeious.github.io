@@ -584,13 +584,16 @@ transform:rotate(360deg) scale(1.2);
     border: 2px solid rgba(255, 255, 255, 0);
     padding-left: 5px;
 }
+
 #fifth form input:focus{
     outline: none;
     border: 2px solid #ea2e49;
 }
+
 #accept{
     margin-top: .5%;
 }
+
 #formleft button{
     padding: 2.5%;
     width: 50%;
@@ -600,16 +603,19 @@ transform:rotate(360deg) scale(1.2);
     transition: all 0.2s;  
     border-radius: 5px;
 }
+
 #formleft button:hover{
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
+
 #formleft button:active{
     -webkit-transform: scale(.97);
     -ms-transform: scale(.97);
     transform: scale(.97);
 }
+
 #formright {
     width: 50%;
     float: right;
@@ -621,6 +627,7 @@ transform:rotate(360deg) scale(1.2);
     padding-left:2em;
     padding-right:2em;
 }
+
 #formright textarea{
     width: 100%;
     height: 12%!important;
@@ -636,6 +643,7 @@ transform:rotate(360deg) scale(1.2);
     border: 2px solid #ea2e49;
     
 }
+
 #footer{
     position: absolute;
     width: 100%;
@@ -646,11 +654,13 @@ transform:rotate(360deg) scale(1.2);
     margin-left: 25%;
     padding: 1em;
 }
+
 #logofooter{
     max-height: 100%;
     float: left;
     position: static;
 }
+
 #footer #social{
     
     width:20%;
@@ -660,45 +670,55 @@ transform:rotate(360deg) scale(1.2);
     padding-top: 1em;
     
 }
+
 #social p{
     color: #747474!important;
     font-size: .8em;
 }
+
 #social img{
     margin: 5px;
     cursor: pointer;
 }
+
 #email{
     float:right;
     padding-top: .5em;
     margin-right: 2%;
     
 }
+
 #email p:first-of-type{
     color: #747474;
     font-size: 60%;
     margin-top: 5%;
 }
+
 #email p:last-of-type{
     font-family: montserrat;
     color:#03b4f5;
     font-size: 60%;
 }
+
 #vitlogo{
     max-width: 100%;
     float: right;
     margin-right: 2%;
 }
+
 #creationlogo{
     float: right;
     max-height: 100%;
 }
+
 #menu .width{
     padding-top: 0;
 }
+
 #second .width{
     padding-top:0%;
 }
+
 .width{
     position: absolute;
     width: 950px;
@@ -710,22 +730,3 @@ transform:rotate(360deg) scale(1.2);
     padding-top:7%;
 }
 
-
-
-.metro-social{width:285px}
-.metro-social li{position:relative;cursor:pointer;padding:0;list-style:none}
-.metro-social .fb,.tw,.gp,.pi,.in,.yt,.fd{z-index:7;float:left;margin:1px;position:relative;display:block}
-.metro-social .fb{background:url(http://3.bp.blogspot.com/-gDUOorsTaS8/URoqPnM84zI/AAAAAAAAJ6U/Xhmy7cIpz2M/s75/facebook.png) no-repeat center center #1f69b3;width:140px;height:141px}
-.metro-social .tw{background:url(http://1.bp.blogspot.com/-ACiFLecWLrU/URom7CIU1aI/AAAAAAAAJ5o/FpAf2PXkzH0/s60/twitter-bird-dark-bgs.png) no-repeat center center #43b3e5;width:68px;height:70px}
-.metro-social .gp{width:69px;height:70px;background:url(http://1.bp.blogspot.com/-xLeqmsg2KY0/URoqO5Y5ikI/AAAAAAAAJ58/RaxLc_hv-Fc/s50/google%252Bplus.png) no-repeat center center #da4a38}
-.metro-social .pi{background:url(http://1.bp.blogspot.com/-namunMjzveg/USC_mj8e7fI/AAAAAAAAKIo/hfylnwqGQmo/s40/pinterest.png) no-repeat center center #d73532;width:68px;height:69px}
-.metro-social .in{background:url(http://4.bp.blogspot.com/-joDwAv84KDs/USC_mviM2uI/AAAAAAAAKIs/KZB9EsNAKIA/s40/linkedin.png) no-repeat center center #0097bd;width:69px;height:69px}
-.metro-social .yt{background:url(http://3.bp.blogspot.com/-hLKJ60klMs0/USC_mh_GWYI/AAAAAAAAKIk/6CmSTv8xQGE/s40/youtube.png) no-repeat center center #e64a41;width:140px;height:69px}
-.metro-social .fd{background:url(http://1.bp.blogspot.com/-s-lGqHCMnbA/URoqPH64IJI/AAAAAAAAJ6I/99a4xAxc98Q/s40/feed.png) no-repeat center center #e9a01c;width:140px;height:69px}
-.metro-social li:hover .fb{background:url(http://3.bp.blogspot.com/-gDUOorsTaS8/URoqPnM84zI/AAAAAAAAJ6U/Xhmy7cIpz2M/s200/facebook.png) no-repeat center center #1f69b3}
-.metro-social li:hover .tw{background:url(http://1.bp.blogspot.com/-ACiFLecWLrU/URom7CIU1aI/AAAAAAAAJ5o/FpAf2PXkzH0/s74/twitter-bird-dark-bgs.png) no-repeat center center #43b3e5}
-.metro-social li:hover .gp{background:url(http://1.bp.blogspot.com/-xLeqmsg2KY0/URoqO5Y5ikI/AAAAAAAAJ58/RaxLc_hv-Fc/s200/google%252Bplus.png) no-repeat center center #da4a38}
-.metro-social li:hover .pi{background:url(http://1.bp.blogspot.com/-namunMjzveg/USC_mj8e7fI/AAAAAAAAKIo/hfylnwqGQmo/s45/pinterest.png) no-repeat center center #d73532}
-.metro-social li:hover .in{background:url(http://4.bp.blogspot.com/-joDwAv84KDs/USC_mviM2uI/AAAAAAAAKIs/KZB9EsNAKIA/s45/linkedin.png) no-repeat center center #0097bd}
-.metro-social li:hover .yt{background:url(http://3.bp.blogspot.com/-hLKJ60klMs0/USC_mh_GWYI/AAAAAAAAKIk/6CmSTv8xQGE/s45/youtube.png) no-repeat center center #e64a41}
-.metro-social li:hover .fd{background:url(http://1.bp.blogspot.com/-s-lGqHCMnbA/URoqPH64IJI/AAAAAAAAJ6I/99a4xAxc98Q/s45/feed.png) no-repeat center center #e9a01c}
