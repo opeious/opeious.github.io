@@ -288,11 +288,16 @@ transform:rotate(360deg) scale(1.4);
     margin-top: 1%;
 }
 #second h3{
-    color: #ea2e49;
+    color: #20beef;
+    
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
     font-family: montserrat;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: .5%;
+    font-size: 10em;
 }
 #second p{
     font-family: aller;
@@ -765,4 +770,22 @@ transform:rotate(360deg) scale(1.4);
 {
     background-size: cover;
     background-image: url(../img/cod-img.jpg);
+}
+
+.secondBox{
+    width: 100%;
+    height: 100%;
+}
+
+.boxes{
+    height: 50%;
+    width: 100%;
+}
+
+#topBox{
+    background-color: #20b;
+}
+
+#bottomBox{
+    background-color: #000;
 }
