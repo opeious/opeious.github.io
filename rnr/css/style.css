@@ -312,7 +312,7 @@ transform:rotate(360deg) scale(1.4);
 }
 #second .narrow:nth-of-type(3),#second .narrow:nth-of-type(4){
   
-    float: left;
+    float: left; 
 }
 #map{
     border-radius: 5px;
