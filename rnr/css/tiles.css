@@ -611,7 +611,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     /*styling the individual tiles*/
 
     .tile-1 {
-      background-color: #56D9C9;
+      background-color: #000;
       color: white
     }
 
@@ -1219,4 +1219,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#img-crew{
+    background-image: url(../img/crew-img.jpg);
+    background-size: cover;
 }

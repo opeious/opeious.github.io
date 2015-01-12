@@ -45,7 +45,7 @@ body p,body h6,body h5{
 #mask{
     position: fixed;
     z-index: -1;
-    background-image: url(../img/stripe3.png);
+    background-image: url(../img/stripe.png);
     background-repeat: repeat;
     width: 100%;
     height: 100%;
