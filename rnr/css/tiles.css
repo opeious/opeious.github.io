@@ -530,7 +530,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       cursor: pointer;
       position: relative;
       background-color: #fff;
-      color: #333;
+      color: #fff;
       position: relative;
       -webkit-transition: background-color 0.2s ease-out;
       -o-transition: background-color 0.2s ease-out;
@@ -574,9 +574,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       transition: left .3s linear
     }
 
+    .caption-fbottom{
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+      -webkit-transition: left .3s linear;
+      -o-transition: left .3s linear;
+      transition: left .3s linear        
+    }
+
+    .tile:hover .caption-fbottom {
+        bottom: 0;
+    }
+
     .tile:hover .caption-left {
       left: 0
     }
+
+
+    
 
     .tile-small {
       width: 49%;
@@ -631,7 +647,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     .tile-3 {
-      background-color: #ddd;
+      background-color: #fff;
       color: #455962
     }
 
@@ -777,21 +793,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       backface-visibility: hidden
     }
     .faces .front{/*default*/
-      background-color: #455962;
-      color: #ddd;
+      background-color: #fff;
+      color: #fff;
     }
     .rotate3dX .front {
-      background-color: #455962;
-      color: #ddd
+      background-color: #fff;
+      color: #fff;
     }
     .rotate3dY .front {
-      background-color: #ddd;
-      color: #455962;
+      background-color: #fff;
+      color: #fff;
     }
 
     .faces .back {
-      background-color: #455962;
-      color: #ddd
+      background-color: #fff;
+      color: #fff
     }
 
     .front span {
@@ -1203,12 +1219,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
 #icon-fifa{
-    margin-top: -5%;
-    width: 110%;
-    height: auto;
+    background-color: #fff;
 }
 
-#image-fifa{
+#img-fifa{
  background-image: url(../img/fifa15play.jpg);
  background-repeat: no-repeat;
  background-size: cover;
@@ -1224,4 +1238,60 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #img-crew{
     background-image: url(../img/crew-img.jpg);
     background-size: cover;
+}
+
+#icon-lol{
+    background-image: url(../img/LoL-Logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-tf2{
+    background-image: url(../img/icon-tf2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-aoe2{
+    background-image: url(../img/aoe2-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-p2{
+    background-image: url(../img/icon-portal2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-nfs{
+    background-image: url(../img/nfs.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-blur{
+    background-image: url(../img/blur-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-wf{
+    background-image: url(../img/wf-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-l4d2{
+    background-image: url(../img/l4d2-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

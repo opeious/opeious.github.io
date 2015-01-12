@@ -760,3 +760,9 @@ transform:rotate(360deg) scale(1.4);
     color: black;
     font-family: hacked;
 }
+
+#img-cod
+{
+    background-size: cover;
+    background-image: url(../img/cod-img.jpg);
+}
