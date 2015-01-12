@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: hacked;
-    src:url('hacked.ttf');
+    src:url('hacked.ttf') format('truetype');
 }
 
 
 @font-face {
     font-family: fof;
-    src:url('fof.ttf');
+    src:url('fof.ttf') format('truetype');
 }
 
 @font-face {
