@@ -241,7 +241,7 @@ transform:rotate(360deg) scale(1.4);
     height: 2%;
     position: relative;
     background:rgba(32, 190, 239, 0.73);
-    z-index: 100;
+    z-index: 10;
 }
 #menu div{
      position: absolute;
@@ -817,5 +817,13 @@ transform:rotate(360deg) scale(1.4);
 }
 
 #rnrspan{
-    background-image: url(../img/mainbg.jpg);
+    background-image: url(../img/text_back.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#fblogo{
+    z-index: 999;
+    position: absolute;
+    right: 5.5%;
 }
