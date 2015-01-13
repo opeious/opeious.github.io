@@ -790,7 +790,28 @@ transform:rotate(360deg) scale(1.4);
     position: relative;
 }
 
+#topBox:hover #Boxfront{
+    left: -100%;
+}
+
 #bottomBox{
     background-color: #000;
     position: relative;
+}
+
+.Boxback{
+    
+    
+}
+
+
+.Boxfront{
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+    
+}
+
+#largeCol{
+    width: 100%;
 }
