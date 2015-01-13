@@ -651,6 +651,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       color: #455962
     }
 
+    .tile-4 {
+        background-color: #eee;
+    }
+
     .tile-3:hover {
       background-color: white;
       color: #455962
@@ -1305,3 +1309,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 0;
     padding: 0;
 }
+
