@@ -151,7 +151,7 @@ body p,body h6,body h5{
     bottom:.2em;
 }
 #mainhead{
-    margin-top: 10%!important;
+    margin-top: 8%!important;
     text-align: center;
     
 }
@@ -701,6 +701,22 @@ transform:rotate(360deg) scale(1.4);
     color: #747474!important;
     font-size: .8em;
 }
+#footer #rights{
+    
+    width:40%;
+    padding-left: 20%;
+    height: 100%;
+    position: static;
+    float: left;
+    padding-top: 1.5em;
+    text-align: center;
+    
+}
+
+#rights p{
+    color: #747474!important;
+    font-size: .8em;
+}
 
 #social img{
     margin: 5px;
@@ -826,4 +842,322 @@ transform:rotate(360deg) scale(1.4);
     z-index: 999;
     position: absolute;
     right: 5.5%;
+}
+
+@media all and (max-width: 800px) { body { font-size: 15px !important; } }
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block {
+  width: 24.5%;
+  margin: 0 1px 0 0;
+  float: left;
+    margin-top: 10%;
+}
+.block:last-child { margin-right: 0 !important; }
+
+.block_container > div { padding: 8% 2% 2%; }
+
+.block#pricing_basic > div > div { background-color: #ef8006; }
+.block#pricing_advanced > div > div { background-color: #77bf22; }
+.block#pricing_professional > div > div { background-color: #20beef; }
+
+.block_container {
+  
+}
+
+/* --------------- TOP --------------- */
+.top {
+  
+}
+
+.title {
+  
+  font-size: 2vw;
+  text-align: center;
+  line-height: 2vw;
+ font-family: aller;
+    color:white;
+}
+
+/* -------------- MIDDLE ------------- */
+.middle {
+  height: 450px;
+    
+}
+@media all and (min-width: 501px) and (max-width: 640px) { .middle { height: 300px; } }
+@media all and (max-width: 500px) { body { font-size: 17.5px !important; } .block { width: 100%; margin: 6vh 0; } .title { font-size: 10vw; line-height: 15vw; } .price_amount { font-size: 15vw !important; line-height: 20vw !important; height: 18vw !important; } .pound_sign { font-size: 8vw !important; line-height: 16vw !important; } .price_sub { font-size: 6vw !important; } .middle { height: auto; } .bottom { margin-top: 12px !important; } }
+
+.price_amount {
+    
+  
+  font-size: 4vw;
+  line-height: 6vw;
+  letter-spacing: -.4vw;
+  text-align: center;
+  height: 7vw;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.pound_sign {
+    
+  font-size: 3vw;
+  line-height: 4vw;
+  vertical-align: top;
+  margin-right: 0vw;
+    color:white;
+}
+
+.price_sub {
+    font-family: aller;
+    font-weight: 200;
+  color:white;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.features {
+    font-family: aller;
+    color:white;
+}
+
+.features ul {
+  padding-left: 1em;
+}
+
+.features ul li {
+  
+}
+
+.feature1 {
+  
+}
+
+.feature2 {
+  
+}
+
+.feature3 {
+  
+}
+
+.feature4 {
+  
+}
+
+/* -------------- BOTTOM ------------- */
+.bottom {
+  margin-top: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+section#timeline {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+section#timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+}
+section#timeline article {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+section#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+}
+section#timeline article div.inner span.date {
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #25303B;
+  color: rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 0 7px #25303B;
+}
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+}
+section#timeline article div.inner span.date span.day {
+  font-size: 10px;
+}
+section#timeline article div.inner span.date span.month {
+  font-size: 18px;
+}
+section#timeline article div.inner span.date span.year {
+  font-size: 10px;
+}
+section#timeline article div.inner h2 {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+section#timeline article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+section#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+}
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -5px;
+}
+section#timeline article:nth-child(1) div.inner h2 {
+  background:#2ecc71;
+}
+section#timeline article:nth-child(1) div.inner h2:after {
+  background: #2ecc71;
+}
+section#timeline article:nth-child(2) div.inner h2 {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(3) div.inner h2 {
+  background: #e67e22;
+}
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: #e67e22;
+}
+section#timeline article:nth-child(4) div.inner h2 {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(5) div.inner h2 {
+  background: #9b59b6;
+}
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: #9b59b6;
+}
+
+
+
+
+
+
+
+/*
+Attempt to reproduce the buttons of MoMA's Century of the Child website with pure CSS: http://goo.gl/abLVi
+If you don't find the buttons I'm talking about, try to click on "Related Events" on the footer menu.
+
+Rafael Rinaldi (rafaelrinaldi.com)
+Jan 19, 2013
+*/
+
+
+#main a {
+	background: #FFF;
+	color: gray;
+	font: bold 11px "Helvetica";
+	padding: 12px;
+	text-decoration: none;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+	
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#main a:after {
+	background: gray;
+	color: #FFF;
+	content: ">";
+	display: inline-block;
+	font: bold 11px "Georgia";
+	height: 25px;
+	line-height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	width: 25px;
+	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#main a:hover {
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
