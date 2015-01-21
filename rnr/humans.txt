@@ -1,0 +1,28 @@
+/* TEAM */
+	Tapan Ranjan
+	Contact: tapanranjan@gmail.com	
+	Twitter: @opeious
+	From: India
+		
+	Sarthak Khanna
+	Contact: sarthak.khanna1994@gmail.com
+	Twitter: @excrutiator1994
+	From: India
+
+
+/* SITE */
+	Last update: 2015
+	Language: English
+	Doctype: HTML5
+	IDE: Brackets, Photoshop
+
+
+/* FUTURE MAYBE? */
+	buy domain
+	setup 000webhosts
+	fix gallery
+	add gear by in about page, reduce size of both panels
+	set up google analytics and events on fb
+	explain bala how to add events, also 000webhosts
+	
+	
