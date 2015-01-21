@@ -1,0 +1,17 @@
+/* TEAM */
+	Tapan Ranjan
+	Contact: tapanranjan@gmail.com	
+	Twitter: @opeious
+	From: India
+		
+	Sarthak Khanna
+	Contact: sarthak.khanna1994@gmail.com
+	Twitter: @excrutiator1994
+	From: India
+
+
+/* SITE */
+	Last update: 2015
+	Language: English
+	Doctype: HTML5
+	IDE: Brackets, Photoshop

@@ -5,15 +5,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tiles.css">
     <link rel="stylesheet" href="css/preloader.css">
+
+    
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.scrollTo.min.js"></script>
     <script src="scripts/main.js"></script>
+    <meta charset="UTF-8">
 </head>
 
 
 
 
 <body onload="preloader()">
+
 
     <div id="fb-root"></div>
     <script>
@@ -28,7 +32,13 @@
     </script>
 
     <div id="blankBG">
+         <div class="progress-wrap progress" data-progress-percent="0">
+  <div class="progress-bar progress"></div>
+</div>
         <div id="preloader">
+           
+            
+            
             <svg version="1.1" id="preloader2" width="140px" height="140px" viewBox="0 0 200 200">
                 <g class="pre load2">
                     <path fill="#20beef" d="M124.5,57L124.5,57c0,3.9-3.1,7-7,7h-36c-3.9,0-7-3.1-7-7v0c0-3.9,3.1-7,7-7h36
@@ -73,9 +83,18 @@
         </div>
         <div class="row full" id="mainhead">
             <img src="img/mainlogo.png"></img>
+            <div id="leftImg">
+                <a onclick="leftImg()"><p><-</p></a>
+            </div>
+            <div id="rightImg">
+                <a onclick="rightImg()"><p>-></p></a>
+            </div>
         </div>
 
         <div class="row full" id="scroll">
+
+            
+            
             <div id="arrowout">
                 <div class="arrow">
                     <img src="img/arrow.png">
@@ -126,7 +145,9 @@
                                         <br>
                                         <br>Our Café features over 20 PC's and 2 PlayStation 4. We believe not only in social gaming but genuinely believe this to be a sport. We are open 7 days a week, 12 hours on the weekdays and even longer on weekends
                                         <br>
-                                        <br>We also feature snacks, drinks, tournaments and other events. Please see the events page for more details.
+                                        <br>We also feature snacks, drinks, tournaments and other events. Please see the events page for more details or call us at +91 994 33 97778<br><br> Come Have Fun at:<br>No. 6, 1st floor, VIT Main Road,  V G P Nagar, Vellore - 632007
+               Near Café Coffee day and next to Limra Restaurant
+
 
                                         <br>
                                         <br>
@@ -145,9 +166,9 @@
                                     <h3><span id="rnrspan">WHERE?</span></h3>
                                 </p>
                             </div>
-                            <div>
+                            <div id="canvas1" class="map">
                                 <p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m41!1m12!1m3!1d31106.100130073206!2d79.13753494043834!3d12.955046481782855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m26!1i0!3e0!4m5!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVIT+University%2C+Near+Katpadi+Road%2C+Katpadi%2C+Vellore%2C+Tamil+Nadu+632014%2C+India!3m2!1d12.968836!2d79.159018!4m5!1s0x3bad477340b4c191%3A0x2ef8ac7a2c27f566!2sRock+N+Rollas+Gaming+Lounge%2C+V+G+P+Nagar%2C+VIT+Main+Road%2C+-+Near+Limra+and+Cafe+Coffee+Day%2C+Vellore%2C+Tamil+Nadu+632012%2C+India!3m2!1d12.968024999999999!2d79.14794599999999!4m5!1s0x3bad47139be78f11%3A0xfe4dca49bfc3cea1!2sKatpadi+Junction%2C+Katpadi%2C+Vellore%2C+Tamil+Nadu%2C+India!3m2!1d12.972522999999999!2d79.13544999999999!4m5!1s0x3bad38975a928c87%3A0x768db0afc502c2a5!2sNew+Bus+Stand+Auto+Rickshaw+Rd%2C+Thottapalayam%2C+Vellore%2C+Tamil+Nadu+632012%2C+India!3m2!1d12.9340686!2d79.1373065!5e0!3m2!1sen!2sus!4v1421159549981" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                                    <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m41!1m12!1m3!1d7776.389532142505!2d79.1117720524105!3d12.959385575850385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m26!1i0!3e0!4m5!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVIT+University%2C+Near+Katpadi+Road%2C+Katpadi%2C+Vellore%2C+Tamil+Nadu+632014%2C+India!3m2!1d12.968836!2d79.159018!4m5!1s0x3bad38975a928c87%3A0x768db0afc502c2a5!2sNew+Bus+Stand+Auto+Rickshaw+Rd%2C+Thottapalayam%2C+Vellore%2C+Tamil+Nadu+632012%2C+India!3m2!1d12.9340686!2d79.1373065!4m5!1s0x3bad47139be78f11%3A0xfe4dca49bfc3cea1!2sKatpadi+Junction%2C+Dharapadavedu%2C+Katpadi%2C+Tamil+Nadu+632007%2C+India!3m2!1d12.972522999999999!2d79.13544999999999!4m5!1s0x3bad477340b4c191%3A0x2ef8ac7a2c27f566!2sRock+N+Rollas+Gaming+Lounge%2C+Old+Katpadi+Road%2C+Thottapalayam%2C+Vellore%2C+Tamil+Nadu%2C+India!3m2!1d12.968024999999999!2d79.14794599999999!5e0!3m2!1sen!2sus!4v1421808242515" width="100%" height="100%" frameborder="0" style="border:0; overflow:hidden;"></iframe>
                                 </p>
                             </div>
 
@@ -170,24 +191,26 @@
 
 
     <div class="row full page" id="third">
+        <div id="blueMask"><p></p></div>
+        
         <div class="width">
 
             <!-- http://sarasoueidan.com/blog/windows8-animations/ -->
 
             <div class="demo-wrapper">
 
-                <div class="dashboard clearfix">
+                <div class="dashboard clearfix" id="flipped1">
                     <ul class="tiles">
                         <div class="col1 clearfix">
 
-                            <li class="tile tile-big tile-3 slideTextUp">
+                            <li class="tile tile-big tile-1 slideTextUp">
                                 <a href="http://www.easports.com/fifa" target="_blank">
                                     <div id="img-fifa">
                                         <p></p>
                                     </div>
                                     <div>
                                         <p>
-                                            <img id="icon-fifa" src="/img/fifa15.jpg" />
+                                            <img id="icon-fifa" src="/img/fifa15.png" />
                                         </p>
                                     </div>
                                 </a>
@@ -226,7 +249,17 @@
 
                         <div class="col2 clearfix">
 
-
+                            <li class="tile tile-big tile-1 slideTextUp">
+                                <a href="http://watchdogs.ubi.com/" target="_blank">
+                                    <div id="img-watchdogs">
+                                        <p></p>
+                                    </div>
+                                    <div id="watchdogsfont">
+                                        <p>Watchdogs</p>
+                                    </div>
+                                </a>
+                            </li>
+<!--
 
                             <li class="tile tile-small tile tile-2 rotate3d rotate3dY">
                                 <div class="faces">
@@ -259,12 +292,12 @@
                                 </div>
                             </li>
 
-
+-->
 
                             <a href="http://dota2.com" target="_blank">
-                                <li class="tile tile-big tile-2 slideTextLeft ">
+                                <li class="tile tile-big tile-1 slideTextLeft ">
 
-                                    <div>
+                                    <div id="img-dota2">
                                         <p>
                                             <img id="icon-dota2" src="/img/dota2-logo.jpg" />
                                         </p>
@@ -274,9 +307,23 @@
                                     </div>
                                 </li>
                             </a>
+
+                            
+                            <a href="http://steamcommunity.com/app/42640" target="_blank">
+                                <li class="tile tile-big tile-1 slideTextUp">
+                                    <div id="img-blur">
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                    <div id="dota2font">
+                                        <p><img src="img/icon-blur.jpg" id="icon-blur"/></p>
+                                    </div>
+                                </li>
+                            </a>
                             <!--Tiles with a 3D effect should have the following structure:
             1) a container inside the tile with class of .faces
-            2) 2 figure elements, one with class .front and the other with class .back-->
+            2) 2 figure elements, one with class .front and the other with class .back
                             <li class="tile tile-small tile tile-2 rotate3d rotate3dY">
                                 <div class="faces">
 
@@ -304,24 +351,28 @@
                                         </div>
                                     </a>
                                 </div>
-                            </li>
+                            </li>-->
                         </div>
 
                         <div class="col3 clearfix">
                             <a href="http://www.counter-strike.net" target="_blank">
-                                <li class="tile tile-2xbig tile-9 fig-tile" id="icon-csgo">
+                                <li class="tile tile-2xbig tile-1  slideTextLeft">
+                                    <div id="img-csgo">
+                                        <p></p>
+                                    </div>
+                                
+                                    <div  id="icon-csgo">
+                                        <p></p>
+                                    </div>
                                 </li>
                             </a>
 
-                            <li class="tile tile-big tile-5 slideTextUp">
-                                <a href="http://watchdogs.ubi.com/" target="_blank">
+                            <li class="tile tile-big tile-1">
+                                <a onclick="flip()">
                                     <div>
                                         <p>
-                                            <img id="icon-watchdogs" src="/img/watchdogs.jpg" />
+                                            <img id="icon-watchdogs" src="/img/dots.png" />
                                         </p>
-                                    </div>
-                                    <div id="watchdogsfont">
-                                        <p>Watchdogs</p>
                                     </div>
                                 </a>
                             </li>
@@ -329,6 +380,173 @@
                         </div>
                     </ul>
                 </div>
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="dashboard clearfix" id="flipped2">
+                    <ul class="tiles">
+                        <div class="col1 clearfix">
+
+                          
+                            <li class="tile tile-big tile-1 slideTextUp">
+                                <a href="http://steamcommunity.com/app/221380" target="_blank">
+                                    <div id="img-aoe2">
+                                        <p></p>
+                                    </div>
+                                    <div id="icon-aoe2">
+                                        <p>
+                                           
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="tile tile-big tile-1 slideTextUp">
+                                <a href="http://www.needforspeed.com/most-wanted" target="_blank">
+                                    <div id="img-nfs">
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="/img/nfs-logo.jpg" />
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="tile tile-big tile-1 slideTextUp">
+                                <a href="http://www.l4d.com/" target="_blank">
+                                    <div id="img-l4d2">
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img id="icon-l4d2" src="/img/l4d2-logo.jpg" />
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </div>
+
+                        <div class="col2 clearfix">
+
+
+                            <li class="tile tile-big tile-1 slideTextUp">
+                                    <a href="http://thinkwithportals.com/" target="_blank">
+                                    <div id="img-p2">
+                                        <p></p>
+                                    </div>
+                                    <div id="icon-p2">
+                                        <p></p>
+                                    </div>
+                                    </a>
+                            </li>
+<!--
+
+                            <li class="tile tile-small tile tile-2 rotate3d rotate3dY">
+                                <div class="faces">
+                                    <a href="http://leagueoflegends.com" target="_blank">
+                                        <div class="front" id="icon-lol"><span></span>
+                                        </div>
+                                    </a>
+                                    <a href="http://www.teamfortress.com/" target="_blank">
+                                        <div class="back" id="icon-tf2">
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="tile tile-small last tile-2 rotate3d rotate3dY">
+                                <div class="faces">
+                                    <a href="http://steamcommunity.com/app/221380" target="_blank">
+
+                                        <div class="front" id="icon-aoe2"><span></span>
+                                        </div>
+                                    </a>
+
+
+                                    <a href="http://thinkwithportals.com/" target="_blank">
+                                        <div class="back" id="icon-p2">
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+-->
+
+                            <a href="http://leagueoflegends.com/" target="_blank">
+                                <li class="tile tile-big tile-1 slideTextLeft ">
+
+                                    <div id="img-lol">
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><img src="img/icon-lol.jpg" id="icon-lol"/></p>
+                                    </div>
+                                </li>
+                            </a>
+
+                            
+                            <a href="http://warframe.com/" target="_blank">
+                                <li class="tile tile-big tile-1 slideTextUp">
+                                    <div id="img-wf">
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                    <div id="dota2font">
+                                        <p><img src="img/wf-logo.jpg" id="icon-blur"/></p>
+                                    </div>
+                                </li>
+                            </a>
+                        </div>
+
+                        <div class="col3 clearfix ">
+                        <a href="http://www.teamfortress.com/" target="_blank">
+                                <li class="tile tile-2xbig tile-1  slideTextLeft">
+                                    <div id="img-tf2">
+                                        <p></p>
+                                    </div>
+                                
+                                    <div  id="icon-tf2">
+                                        <p></p>
+                                    </div>
+                                </li>
+                            </a>
+
+
+                            <li class="tile tile-big tile-1">
+                                <a onclick="flip()">
+                                    <div>
+                                        <p>
+                                            <img id="icon-watchdogs" src="/img/arrs.png" />
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </div>
+                    </ul>
+                </div>
+            
                 <!--end dashboard-->
 
             </div>
@@ -344,6 +562,7 @@
 
         </div>
     </div>
+
     <div class="row full page" id="fourth">
         <div class="width">
             <div class="container">
@@ -355,7 +574,7 @@
                         </div>
 
                         <div class="middle">
-                            <div class="price_amount"><span class="pound_sign"></span>&#8377;40</div>
+                            <div class="price_amount"><span class="pound_sign"></span><img src="img/rs.png" class="rsSymbol"/>40</div>
                             <div class="price_sub">1 Hour
                                 <br>
                                 <br>
@@ -382,7 +601,7 @@
 
                         <div class="middle">
                             <div class="price_amount">
-                                </span>&#8377;300</div>
+                                </span><img src="img/rs.png" class="rsSymbol"/>300</div>
                             <div class="price_sub">10 Hours
                                 <br>
                                 <br>
@@ -409,7 +628,7 @@
 
                         <div class="middle">
                             <div class="price_amount">
-                                </span>&#8377;250</div>
+                                </span><img src="img/rs.png" class="rsSymbol"/>250</div>
                             <div class="price_sub">12 Hours
                                 <br>
                                 <br>
@@ -442,7 +661,7 @@
                         </div>
 
                         <div class="middle">
-                            <div class="price_amount"><span class="pound_sign"></span>&#8377;50*</div>
+                            <div class="price_amount"><span class="pound_sign"></span><img src="img/rs.png" class="rsSymbol"/>50*</div>
                             <div class="price_sub">1 Hour
                                 <br>
                                 <br>
@@ -459,7 +678,7 @@
                                 </ul>
                                 <br>
                                 <br>
-                                <br>*&#8377;70 if you play alone.
+                                <br>*<img src="img/rs3.png" class="rs3Symbol"/>70 if you play alone.
                             </div>
                         </div>
 
@@ -472,19 +691,34 @@
     </div>
     <div class="row full page" id="fifth">
         <div class="width">
+        <div id="timelineContainer">
             <section id="timeline">
                 <article>
                     <div class="inner">
-                        <span class="date" class="upcoming">
+                        <span class="date upcoming">
         <span class="day">23<sup>rd</sup></span>
                         <span class="month">Jan</span>
                         <span class="year">2015</span>
                         </span>
                         <h2>Rise Of Professionals</h2>
-                        <p>A tournament for FIFA15, Counter Strike: GO, DOTA 2. A total Prize pool of &#8377;15000.<a href="rop.html" target="_blank"> Click here for more details!</a> 
+                        <p>A tournament for <b>DOTA 2</b>. A total Prize pool of <img src="img/rs2.png" class="rs2Symbol"/>15000.<a href="https://www.facebook.com/events/357600414444095/" target="_blank"> Click here for more details!</a> 
                         </p>
                     </div>
                 </article>
+                
+                <article>
+                    <div class="inner">
+                        <span class="date upcoming">
+        <span class="day">31<sup>st</sup></span>
+                        <span class="month">Jan</span>
+                        <span class="year">2015</span>
+                        </span>
+                        <h2>Rise Of Professionals</h2>
+                        <p>A tournament for <b>FIFA15</b> (PS4). A total Prize pool of <img src="img/rs2.png" class="rs2Symbol"/>15000.<a href="https://www.facebook.com/events/749874331756563/" target="_blank"> Click here for more details!</a> 
+                        </p>
+                    </div>
+                </article>
+
                 <article>
                     <div class="inner">
                         <span class="date">
@@ -493,13 +727,30 @@
                         <span class="year">2014</span>
                         </span>
                         <h2>250 To Play</h2>
-                        <p>A League for DOTA 2 enthusiasts! With a total prize pool of &#8377;8000. A first of its kind tournament in the neighbourhood.
-                            <br> <a href="2502play.html" target="_blank">Click here to see images and other details of the event.</a>
+                        <p>A League for DOTA 2 enthusiasts! With a total prize pool of <img src="img/rs2.png" class="rs2Symbol"/>8000. A first of its kind tournament in the neighbourhood.
+                            <br> <a href="https://www.facebook.com/events/501188113353791/" target="_blank">Click here to see images and other details of the event.</a>
                         </p>
                     </div>
                 </article>
+               
 
+
+                                <article>
+                    <div class="inner">
+                        <span class="date">
+        <span class="day">15<sup>th</sup></span>
+                        <span class="month">Aug</span>
+                        <span class="year">2014</span>
+                        </span>
+                        <h2>FIFA PS4 Tourney</h2>
+                        <p>A tournament for FIFA15 for the PS4<br><a href="https://www.facebook.com/events/319221598238210/" target="_blank"> Click here for more details!</a> 
+                        </p>
+                    </div>
+                </article>
+                
             </section>
+            </div>
+        </div>
         </div>
         <div id="footer">
 
@@ -508,7 +759,9 @@
                 <a href="https://www.facebook.com/rnrlounge" target="_blank">
                     <img src="img/facebook.png">
                 </a>
-                <img src="img/twitter.png">
+                
+                <a href="https://twitter.com/rnrlounge" target="_blank"></a>
+                <img src="img/twitter.png"></a>
             </div>
             <div id="rights">
                 <p>All Rights Reserved</p>
@@ -523,8 +776,9 @@
 
 
         </div>
-    </div>
+    
     <script src="scripts/menubar.js"></script>
+
 </body>
 
 </html>
