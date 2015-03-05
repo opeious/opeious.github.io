@@ -1,0 +1,165 @@
+.h
+{
+    
+}
+
+#pro
+{
+    width: 95.6%;
+    height: 83.4%;
+    overflow-y: hidden;
+    border: none;
+    position: 
+        absolute;
+    top:16.1%;    
+    left: 1.4%;   
+}
+
+#pro::-webkit-scrollbar{
+width:10px;
+background-color:#cccccc;
+border: 1px #bebebe;
+} 
+
+#pro::-webkit-scrollbar-thumb{
+background-color:#133453;
+border-radius:0px;
+}
+#pro-webkit-scrollbar-thumb:hover{
+background-color:#066fa0;
+}
+#pro-webkit-scrollbar-thumb:active{
+background-color:#133453;
+} 
+
+
+body
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+#one
+{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    height: 100%;
+   
+}
+
+#oneBg
+{
+    height: 83.2%;
+    margin-top: 9.5%;    
+    
+    
+}
+
+.jumbotron{
+    font-family: 'Open Sans';
+    overflow-y: scroll;
+    width: 98.4%;
+}
+
+.jumbotron::-webkit-scrollbar{
+width:10px;
+background-color:#cccccc;
+border: 1px #bebebe;
+} 
+
+.jumbotron::-webkit-scrollbar-thumb{
+background-color:#133453;
+border-radius:0px;
+}
+.jumbotron::-webkit-scrollbar-thumb:hover{
+background-color:#066fa0;
+}
+.jumbotron::-webkit-scrollbar-thumb:active{
+background-color:#133453;
+} 
+
+#two
+{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+
+}
+
+#twoBg
+{
+    height: 83.2%;
+    margin-top: 9.5%;    
+}
+
+#three
+{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: auto;
+    height: 25%;
+
+}
+
+#threeBg
+{
+    height: 83.2%;
+    margin-top: 9.5%;    
+}
+
+#four
+{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 75%;
+    margin: auto;
+    height: 25%;
+
+}
+
+#pdf
+{
+   float:right;
+   margin-top: 19px;
+   width: 75px;
+    
+}
+
+#fourBg
+{
+    
+    height: 83.2%;
+    margin-top: 9.5%;    
+}
+
+#three ul
+{
+    font-size: 21px;
+font-weight: 200;
+}
+
+#cont li
+{
+    margin-top: 60px;
+    margin-left: 10%;
+    float: left;
+    list-style: none;
+}
+
+#cont li img
+{
+    width: 100%;
+    height: 100%;
+}

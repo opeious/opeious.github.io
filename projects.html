@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tapan Ranjan">
-    <meta name="author" content="opeious">
+    <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Tapan Ranjan - About Me</title>
+    <title>Tapan Ranjan - Projects</title>
       
 
 
@@ -28,15 +27,14 @@
     
     <script src="js/bootstrap.min.js"></script>
 
-
-    
-      
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
  rel='stylesheet' type='text/css'>
    
       
       
       <link href="css/style.css" type="text/css">
+      
+       <link href="css/preloader.css" type="text/css">  
       <script>
              $(document).ready(function() {
     resi();
@@ -45,8 +43,8 @@
 </script>
       
 </head>
-    
-  <body id="bodyM">
+
+  <body id="bodyM" onload="resi()">
   
     <!-- Fixed navbar -->
     <div id="swankyBar"></div>
@@ -67,29 +65,23 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav" id="nvBar">
-            <li class="active"><a href="index.html" id="aboutMe"><div id="aboutImg" class="inv"></div><div class="iText" id="t1"><img src="img/arr.png"/>About Me</div></a></li>
-            <li><a href="projects.html" id="projects"><div id="projImg" class="inv"></div><div class="iText" id="t2"><img src="img/arr.png"/>Projects</div></a></li>
+            <li><a href="index.html" id="aboutMe"><div id="aboutImg" class="inv"></div><div class="iText" id="t1"><img src="img/arr.png"/>About Me</div></a></li>
+            <li class="active"><a href="projects.html" id="projects"><div id="projImg" class="inv"></div><div class="iText" id="t2"><img src="img/arr.png"/>Projects</div></a></li>
             <li><a href="resume.html" id="resume"><div id="resImg" class="inv"></div><div class="iText" id="t3"><img src="img/arr.png"/>Resume</div></a></li>
             <li ><a href="contact.html" id="contact"><div id="conImg" class="inv"></div><div class="iText" id="t4"><img src="img/arr.png"/>Contact Me</div></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </div>      
+      
+<div class="container" id="one">
 
-    <div class="container" id="one">
-      <div class="jumbotron" id="oneBg" >
-        <h1>About Me</h1>
-        <p>I am a final year student of Bachelors of Computer Science from VIT University, expected to graduate in June, 2015. I have a specific interest in artificial intelligence, web development and emerging technologies, but my main interest lies in finding clever programming solutions.
-          <br><br>
-          I hope to find a position in which I will be a productive and useful team member where I can apply my skills and learnings on meaning projects while gaining additional theoretical and practical knowledge.
-        
-          </p>
-      </div>
-
-    </div> <!-- /container -->
-
-
-    
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" id="twoBg" >
+        <div style="overflow:auto;-webkit-overflow-scrolling:touch">    
+        <iframe src="time.html" id="pro"></iframe></div>
+</div>
+      
     <script>        
         var scrolled=0   ;
         
@@ -104,7 +96,7 @@
         
         });
             
-    $("#projects").click(function(){ $.scrollTo('#two',1000, {easing:'elasout'} ); 
+    $("#projects").click(function(){ $.scrollTo(0,0, {easing:'elasout'} ); 
         $('#aboutMe').parent().removeClass('active'); 
         $('#projects').parent().addClass('active'); 
         $('#resume').parent().removeClass('active'); 
@@ -342,3 +334,7 @@ function resi() {
   </body>
 
 </html>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
