@@ -3,342 +3,48 @@
 <html lang="en">
   <head>
     
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 
-      
-      
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tapan Ranjan">
-    <meta name="author" content="opeious">
-    <link rel="icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
-    <title>Tapan Ranjan - About Me</title>
-      
-
-
-      
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
+ <link rel="stylesheet" href="css/swipebox.css">
     
-    <script src="js/bootstrap.min.js"></script>
-
-
+ <!------ Light Box ------>
     
-      
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
- rel='stylesheet' type='text/css'>
-   
-      
-      
-      <link href="css/style.css" type="text/css">
-      <script>
-             $(document).ready(function() {
-    resi();
-   });
-
-</script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" >
+     <link rel="stylesheet" href="css/myc.css">
       
 </head>
     
   <body id="bodyM">
   
-    <!-- Fixed navbar -->
-    <div id="swankyBar"></div>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navBarTop">
-    
-        <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="navBut">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <img src="img/face3.png" id="face" class="inv"/>
-            <img src="img/face4.png" id="face2" class="inv"/>
-           
-            <div id="tapanR" class="tapanR1">Tapan Ranjan</div>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav" id="nvBar">
-            <li class="active"><a href="index.html" id="aboutMe"><div id="aboutImg" class="inv"></div><div class="iText" id="t1"><img src="img/arr.png"/>About Me</div></a></li>
-            <li><a href="projects.html" id="projects"><div id="projImg" class="inv"></div><div class="iText" id="t2"><img src="img/arr.png"/>Projects</div></a></li>
-            <li><a href="resume.html" id="resume"><div id="resImg" class="inv"></div><div class="iText" id="t3"><img src="img/arr.png"/>Resume</div></a></li>
-            <li ><a href="contact.html" id="contact"><div id="conImg" class="inv"></div><div class="iText" id="t4"><img src="img/arr.png"/>Contact Me</div></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+	<div class="banner">
+		<div class="container-fluid">
+			<div class="header">
+				
+            <div class="clearfix"></div>
+			</div><br><br><br><br><br><br><br>
+				<div class="banner-info" id="header-info">
+                    <h1>I am a <span>Developer.<span class="blink_me">|</span></span></h1>
+					<p>Web Development - AI - Software Engineering - Prototyping - Game Dev</p>
+					
+				</div>
+		</div>
+	</div>
+	<!-- header -->
+	<!-- branding -->
+	<div class="branding" id="home">
+		<div class="container">
+			
 
-    <div class="container" id="one">
-      <div class="jumbotron" id="oneBg" >
-        <h1>About Me</h1>
-        <p>I am a final year student of Bachelors of Computer Science from VIT University, expected to graduate in June, 2015. I have a specific interest in artificial intelligence, web development and emerging technologies, but my main interest lies in finding clever programming solutions.
-          <br><br>
-          I hope to find a position in which I will be a productive and useful team member where I can apply my skills and learnings on meaning projects while gaining additional theoretical and practical knowledge.
-        
-          </p>
-      </div>
-
-    </div> <!-- /container -->
-
-
-    
-    <script>        
-        var scrolled=0   ;
-        
-    $("#aboutMe").click ( function() { 
-        $.scrollTo( 0, 1000, {easing:'elasout'} ); 
-        $('#aboutMe').parent().addClass('active'); 
-        $('#projects').parent().removeClass('active'); 
-        $('#resume').parent().removeClass('active'); 
-        $('#contact').parent().removeClass('active'); 
-        document.getElementById("face2").src= "img/face5.png";
-        $("#oneBg").animate({scrollTop:  scrolled});
-        
-        });
-            
-    $("#projects").click(function(){ $.scrollTo('#two',1000, {easing:'elasout'} ); 
-        $('#aboutMe').parent().removeClass('active'); 
-        $('#projects').parent().addClass('active'); 
-        $('#resume').parent().removeClass('active'); 
-        $('#contact').parent().removeClass('active');                                    
-        document.getElementById("face2").src= "img/face4.png";
-        $("#pro").animate({scrollTop:  scrolled});
-                                    
-       var my = document.getElementById('pro');  
-        my.contentWindow.scrollTo(0,0);
-        });
-        
-    $("#resume").click(function(){ $.scrollTo('#three',1000, {easing:'elasout'} ); 
-        $('#aboutMe').parent().removeClass('active'); 
-        $('#projects').parent().removeClass('active'); 
-        $('#resume').parent().addClass('active'); 
-        $('#contact').parent().removeClass('active');                                   
-        document.getElementById("face2").src= "img/face4.png";
-        
-        $("#threeBg").animate({scrollTop:  scrolled});
-                                
-     
-        });
-                
-    $("#contact").click(function(){ $.scrollTo('#four',1000, {easing:'elasout'} );   
-        $('#aboutMe').parent().removeClass('active'); 
-        $('#projects').parent().removeClass('active'); 
-        $('#resume').parent().removeClass('active'); 
-        $('#contact').parent().addClass('active');                                    
-        document.getElementById("face2").src= "img/face4.png";
-                                   
-        $("#fourBg").animate({scrollTop:  scrolled});                                   
-        });
-                
-        
-    $('#navBut').click(function()  {
-        
-        
-        
-        if( $('#face').hasClass("inv1")) {  
-           $('#face').removeClass("inv1");
-           $('#face').addClass("inv2");
-        }
-        else {  
-           $('#face').removeClass("inv2");
-           $('#face').addClass("inv1");}
-
-                if( $('#face2').hasClass("inv1")) {  
-           $('#face2').removeClass("inv1");
-           $('#face2').addClass("inv2");
-        }
-        else {  
-           $('#face2').removeClass("inv2");
-           $('#face2').addClass("inv1");}
-                       
-                 if( $('#face2').hasClass("inv1")) {  
-           $('#face2').removeClass("inv1");
-           $('#face2').addClass("inv2");
-        }
-        else {  
-           $('#face2').removeClass("inv2");
-           $('#face2').addClass("inv1");}  
-        
-        
-        if( $('#aboutImg').hasClass("inv1")) {  
-           $('#aboutImg').removeClass("inv1");
-           $('#aboutImg').addClass("inv2");
-        }
-        else {  
-           $('#aboutImg').removeClass("inv2");
-           $('#aboutImg').addClass("inv1");}  
-        
-        if( $('#projImg').hasClass("inv1")) {  
-           $('#projImg').removeClass("inv1");
-           $('#projImg').addClass("inv2");
-        }
-        else {  
-           $('#projImg').removeClass("inv2");
-           $('#projImg').addClass("inv1");}
-        
-        if( $('#resImg').hasClass("inv1")) {  
-           $('#resImg').removeClass("inv1");
-           $('#resImg').addClass("inv2");
-        }
-        else {  
-           $('#resImg').removeClass("inv2");
-           $('#resImg').addClass("inv1");}  
-        
-                if( $('#conImg').hasClass("inv1")) {  
-           $('#conImg').removeClass("inv1");
-           $('#conImg').addClass("inv2");
-        }
-        else {  
-           $('#conImg').removeClass("inv2");
-           $('#conImg').addClass("inv1");}  
-        
-        
-                if( $('#t1').hasClass("iText")) {  
-           $('#t1').removeClass("iText");
-           $('#t1').addClass("jText");
-        }
-        else {  
-           $('#t1').removeClass("jText");
-           $('#t1').addClass("iText");}  
-        
-                        if( $('#t2').hasClass("iText")) {  
-           $('#t2').removeClass("iText");
-           $('#t2').addClass("jText");
-        }
-        else {  
-           $('#t2').removeClass("jText");
-           $('#t2').addClass("iText");}  
- 
-                if( $('#t3').hasClass("iText")) {  
-           $('#t3').removeClass("iText");
-           $('#t3').addClass("jText");
-        }
-        else {  
-           $('#t3').removeClass("jText");
-           $('#t3').addClass("iText");}  
-        
-                        if( $('#t4').hasClass("iText")) {  
-           $('#t4').removeClass("iText");
-           $('#t4').addClass("jText");
-        }
-        else {  
-           $('#t4').removeClass("jText");
-           $('#t4').addClass("iText");}          
-        
-        foo();
-    });
-
-
-    </script>
-
-<script>
-function foo()
-    {
-        $('#tapanR').removeClass("tapanR1");
-        $('#tapanR').addClass("tapanR2");
-        
-        $('#face').removeClass("inv1");
-        $('#face').addClass("inv2");
-        
-        $('#face2').removeClass("inv1");
-        $('#face2').addClass("inv2");
-    
-        $('#aboutImg').removeClass("inv1");
-        $('#aboutImg').addClass("inv2");
-        
-        $('#projImg').removeClass("inv1");
-        $('#projImg').addClass("inv2");    
-    
-        $('#resImg').removeClass("inv1");
-        $('#resImg').addClass("inv2");
-        
-        $('#conImg').removeClass("inv1");
-        $('#conImg').addClass("inv2");    
-
-        $('#t1').removeClass("iText");
-        $('#t1').addClass("jText");
-
-        $('#t2').removeClass("iText");
-        $('#t2').addClass("jText");
-        $('#t3').removeClass("iText");
-        $('#t3').addClass("jText");        
-        $('#t4').removeClass("iText");
-        $('#t4').addClass("jText");    
-        
-    }
-    
-function foo2()
-    {
-        $('#tapanR').removeClass("tapanR2");
-        $('#tapanR').addClass("tapanR1");
-            
-        $('#face').removeClass("inv2");
-        $('#face').addClass("inv1");
-        
-        $('#face2').removeClass("inv2");
-        $('#face2').addClass("inv1");
-    
-        $('#aboutImg').removeClass("inv2");
-        $('#aboutImg').addClass("inv1");
-        
-        $('#projImg').removeClass("inv2");
-        $('#projImg').addClass("inv1");    
-    
-        $('#resImg').removeClass("inv2");
-        $('#resImg').addClass("inv1");
-        
-        $('#conImg').removeClass("inv2");
-        $('#conImg').addClass("inv1");    
-
-        $('#t1').removeClass("jText");
-        $('#t1').addClass("iText");
-
-        $('#t2').removeClass("jText");
-        $('#t2').addClass("iText");
-        $('#t3').removeClass("jText");
-        $('#t3').addClass("iText");        
-        $('#t4').removeClass("jText");
-        $('#t4').addClass("iText");    
-
-    
-    }
-    
-  $(window).resize(function() { 
+            <h4><p>Oops! Website is down for scheduled maintenance. Click<a href="https://www.linkedin.com/in/tapanranjan" target="_blank"> Here </a> for my linkedIn profile.<br>Online Projects:&nbsp;&nbsp;&nbsp;&nbsp; <a href="life.html" target="_blank">Herding behaviour simulator</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="life.html" target="_blank">TSP solver</a></p></h4>
+			
+		</div>
+	</div>
       
-          resi();                                
-               });
-    
-function resi() {
-    
-    if($(window).width()<1200)                        
-       foo(); 
-      else
-        foo2();                                  
-};
-    
-    
-
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54539897-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
   </body>
 
 </html>
