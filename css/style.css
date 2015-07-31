@@ -316,7 +316,7 @@ p{
 		 * --------------------------------------- */
         #section0 {
             background-size:cover;
-            background-image: url(../imgs/_banner.png);
+            background-image: url(../imgs/bg.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
         }
